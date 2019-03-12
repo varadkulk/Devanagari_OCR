@@ -3,6 +3,8 @@ import pytesseract
 
 img=Image.open("x.png")
 
-text=pytesseract.image_to_string(img,lang='0')
+text=pytesseract.image_to_string(img,lang='eng')
 
 print(text)
+
+https://askubuntu.com/questions/793634/how-do-i-install-a-new-language-pack-for-tesseract-on-16-04
