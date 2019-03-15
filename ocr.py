@@ -35,10 +35,9 @@ while x!=0:
             print("1. for script output in terminal (Warning: proper font required)")
             print("2. for script output to file")
             print("3. for OSD (result containing information about orientation and script detection)")
-            print("4. for data (result containing box boundaries, confidences, and other information)\n")
             text = input ("Input: ")
             j = int(text)
-            if j<=0 or j>5:
+            if j<=0 or j>4:
                 print("\nWrong input!!!")
             else:
                 if j==1:
@@ -48,8 +47,6 @@ while x!=0:
                     f= open(text,"w+",encoding='utf-8')
                     f.write(pt.image_to_string(img, lang=language))
                     f.close()
-                    print("Script output to file"+text+"sucessful")
+                    print("Script output to file "+text+" sucessful")
                 elif j==3:
                     print(pt.image_to_osd(img))#script info
-                elif j==4:
-                    print(pt.image_to_data(img))
