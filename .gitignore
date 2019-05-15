@@ -1,2 +1,8 @@
 \.idea/*
 *\.idea/*
+*.class
+*.exe
+*.code-workspace
+*.out
+*.o
+.vscode/
