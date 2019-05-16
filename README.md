@@ -25,6 +25,6 @@
 
 **Run:** 
 
-* ocr.bat on Windows
+* ocr.exe on Windows
 
 * ocr.sh on shell
