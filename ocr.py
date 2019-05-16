@@ -19,7 +19,7 @@ def return_value(i,language):
         tex.insert(INSERT,s)
         tex.see(END)
         tex.config(state=DISABLED)
-        copy = Button(window, text="Copy Output", font=(font, font_size), command=pyperclip.copy(s)).pack()
+        copy = Button(window, text="Copy Text", font=(font, font_size), command=pyperclip.copy(s)).pack()
         
 def submit():
         if str(langtk.get())=='Select Language':
@@ -40,9 +40,9 @@ def submit():
                         l='guj'#Gujarati'
                 return_value(str(imgtk.get()),l)
         
-window = Tk()
-window.geometry('800x800+500+300')
-window.title("OCR")
+window = Tk()#Start window
+window.geometry('1300x650')#Assign its size
+window.title("OCR")#Title
 window.iconbitmap('favicon.ico')
 font = "Product Sans"
 font_size = 15
