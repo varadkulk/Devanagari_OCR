@@ -1,8 +1,31 @@
 **Required Applications:**
-*Tesseract, Python*
+
+*Tesseract*
+
+* Python*
+
 **Python Libraries:**
-*PIL, pytesserct, pyperclip*
+
+*PIL*
+
+*pytesserct*
+
+*pyperclip*
+
 **Traindata for Tesseract:**
-*English, Hindi, Marathi, Sanskrit, Gujarati*
+
+*English*
+
+*Hindi*
+
+*Marathi*
+
+*Sanskrit*
+
+*Gujarati*
+
 **Run:** 
-*ocr.bat on Windows, ocr.sh on shell*
+
+*ocr.bat on Windows*
+
+*ocr.sh on shell*
