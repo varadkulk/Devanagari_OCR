@@ -5,8 +5,16 @@ from tkinter import *
 import pyperclip
 
 def return_value(i,language):
-        img = ig.Image.open(i)
-        s= pt.image_to_string(img, lang=language)
+        s=''
+        try:
+                img = ig.Image.open(i)
+                s= pt.image_to_string(img, lang=language)
+        except:
+                tex.config(state=NORMAL)
+                tex.insert(INSERT,"Invalid Image\n")
+                tex.see(END)
+                tex.config(state=DISABLED)
+                return
         tex.config(state=NORMAL)
         tex.insert(INSERT,s)
         tex.see(END)
@@ -14,20 +22,23 @@ def return_value(i,language):
         copy = Button(window, text="Copy Output", font=(font, font_size), command=pyperclip.copy(s)).pack()
         
 def submit():
-        lg=str(langtk.get())
-        if lg=='English':
-                l='eng'#English
-        elif lg=='Marathi':
-                l='mar'#Marathi
-        elif lg=='Hindi':
-                l='hin'#Hindi
-        elif lg=='Sanskrit':
-                l='san'#Sanskrit
-        elif lg=='Gujarati':
-                l='guj'#Gujarati'
-        if l=='':
-                pass
-        return_value(str(imgtk.get()),l)
+        if str(langtk.get())=='Select Language':
+                tex.config(state=NORMAL)
+                tex.insert(INSERT,"ERROR\n")
+                tex.see(END)
+                tex.config(state=DISABLED)
+        else:
+                if str(langtk.get())=='English':
+                        l='eng'#English
+                elif str(langtk.get())=='Marathi':
+                        l='mar'#Marathi
+                elif str(langtk.get())=='Hindi':
+                        l='hin'#Hindi
+                elif str(langtk.get())=='Sanskrit':
+                        l='san'#Sanskrit
+                elif str(langtk.get())=='Gujarati':
+                        l='guj'#Gujarati'
+                return_value(str(imgtk.get()),l)
         
 window = Tk()
 window.geometry('800x800+500+300')
