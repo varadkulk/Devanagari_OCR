@@ -65,7 +65,14 @@ def browse_button():
 window = Tk()#Start window
 window.geometry('1400x700')#Assign its size
 window.title("OCR")#Title
-window.iconbitmap('data\\ocr.ico')
+
+try:
+        window.iconbitmap('data\\ocr.ico')
+except:
+        try:
+                window.iconbitmap('ocr.ico')
+        except:
+                pass
 
 font = "Product Sans"
 font_size = 15
