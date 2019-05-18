@@ -67,7 +67,7 @@ def browse_button():
         inp.insert(INSERT,filename)
 
 window = Tk()#Start window
-window.geometry('1400x700')#Assign its size
+window.geometry('1400x910')#Assign its size
 window.title("OCR")#Title
 
 try:
@@ -107,6 +107,6 @@ sub = Button(window, text="Submit", font=(font, font_size), command=submit).pack
 tex=Text(window)
 tex.pack(side=TOP, fill=X)
 tex.insert(INSERT, "Output:\n")
-tex.config(state=DISABLED,font=(font, 10))
+tex.config(state=DISABLED,font=(font, font_size))
 
 window.mainloop()
