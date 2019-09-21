@@ -1,3 +1,6 @@
+**Final version availabele on:**
+https://github.com/varadkulk/OCR
+
 **Required Applications:**
 
 * Tesseract
