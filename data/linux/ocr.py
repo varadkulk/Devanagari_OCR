@@ -67,7 +67,7 @@ def browse_button():
         inp.insert(INSERT,filename)
 
 window = Tk()#Start window
-window.geometry('1400x910')#Assign its size
+window.geometry('1200x630')#Assign its size
 window.title("OCR")#Title
 
 try:
@@ -80,8 +80,8 @@ except:
 
 n=0
 
-font = "Product Sans"
-font_size = 15
+font = "Open Sans"
+font_size = 9
 
 imgtk = StringVar()
 langtk = StringVar()

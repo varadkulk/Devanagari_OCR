@@ -5,3 +5,8 @@
 *.out
 *.o
 .vscode/
+build/
+data/__pycache__/
+Final/
+data/win/pytesseract/
+data/win/Tesseract-OCR/
