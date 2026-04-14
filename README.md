@@ -1,4 +1,4 @@
-**Final version availabele on (only for Windows) :**
+**Final version available on (only for Windows) :**
 https://github.com/varadkulk/OCR
 
 **Required Applications:**
